@@ -1,0 +1,30 @@
+[alias]
+    la = config --get-regexp alias
+    pr = pull --rebase
+    co = checkout
+    cm = commit -m
+    cmfix = commit --amend --no-edit
+    st = status
+    ri = rebase --interactive
+    ra = rebase --abort
+    rc = rebase --continue
+    re = rebase
+    cp = cherry-pick
+    br = branch
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -30
+    d = diff
+    dt = difftool -y
+    dts = difftool --dir-diff
+    unstage = reset HEAD
+    uncommit = reset --soft HEAD^
+[user]
+        name = Andy Chan 
+        //input email
+[push]
+	default = simple
+[core]
+	pager = less -erX
+[color]
+	ui = auto
+[diff]
+	tool = meld
